@@ -1,0 +1,34 @@
+{
+    "monitor": {
+        "ip": {
+            "服务器IP": "123.123.123.123",
+            "键名可以自定义作为备注": "321.321.321.321",
+            "键值对可以是多个": "255.255.255.233"
+        },
+        "url": {
+            "后端服务地址": "http://meow.meow.meow",
+            "键名可以自定义作为备注": "http://aaa.com",
+            "键值对可以是多个": "http://ddd.eee.com"
+        }
+    },
+    "pushService": {
+        "pushplus": {
+            "url": "https://www.pushplus.plus",
+            "token": "上方官方服务url是固定的, 不要改, 此处填申请到的TOKEN",
+            "method": "get"
+        },
+        "ntfy": {
+            "url": "https://ntfy.example.com/test",
+            "token": "上方url后缀需要有你的订阅主题端点, 然后如果你没配置权限访问, 可以删掉这组键值对。下方priority设置为4刚刚好, 如果设置为5会发出系统铃声",
+            "priority": 4,
+            "method": "post"
+        },
+        "gotify": {
+            "url": "https://gotify.example.com",
+            "token": "在gotify服务页面右上角APPS处创建新的主题, 复制主题token到此, 注意点在于目前只支持post方式推送消息故下方method不要动, priority设置为7刚刚好, 如果设置为8-10会发出系统铃声",
+            "priority": 7,
+            "method": "post"
+        }
+    },
+    "onlyError": false
+}
