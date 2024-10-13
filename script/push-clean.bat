@@ -3,12 +3,16 @@ setlocal enabledelayedexpansion
 
 :: 执行你的Git命令
 git rev-list --objects --all
-git checkout --orphan new
+
+:: 创建名为"Nnewa"的孤儿分支
+git checkout --orphan Nnewa
 git add .
 git commit -m "v0.2.0"
 
-:: 删除并重命名分支
-git branch -D Nnewa
+:: 删除旧的main分支（如果需要）
+git branch -d main
+
+:: 重命名当前分支为"Nnewa"
 git branch -m Nnewa
 
 :: 强制推送到origin远程仓库

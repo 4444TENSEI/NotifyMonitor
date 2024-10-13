@@ -1,0 +1,30 @@
+{
+    "monitor": {
+        "ip": {
+            "服务器IP": "123.123.123.123",
+            "键名可以自定义作为备注": "321.321.321.321",
+            "键值对可以是多个": "255.255.255.233"
+        },
+        "url": {
+            "后端服务地址": "http://meow.meow.meow",
+            "键名可以自定义作为备注": "http://aaa.com",
+            "键值对可以是多个": "http://ddd.eee.com"
+        }
+    },
+    "NotifyWind": {
+        "pushplus": {
+            "token": "4c0cf68ccdc94efa87542fe9ead87dbf"
+        },
+        "ntfy": {
+            "server_url": "https://msg.yokaze.top/monitor",
+            "token": "tk_o3nhdr8ehiwzw7prjv1iypllpr0nl",
+            "priority": 4
+        },
+        "gotify": {
+            "server_url": "https://gotify.yokaze.top",
+            "token": "AYgVvitBhCvzSjE",
+            "priority": 8
+        }
+    },
+    "onlyError": false
+}
