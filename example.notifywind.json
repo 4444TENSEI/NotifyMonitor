@@ -1,0 +1,30 @@
+{
+    "monitor": {
+        "ip": {
+            "服务器IP": "123.123.123.123",
+            "键名可以自定义作为备注": "321.321.321.321",
+            "键值对可以是多个": "255.255.255.233"
+        },
+        "url": {
+            "后端服务地址": "http://meow.meow.meow",
+            "键名可以自定义作为备注": "http://aaa.com",
+            "键值对可以是多个": "http://ddd.eee.com"
+        }
+    },
+    "NotifyWind": {
+        "pushplus": {
+            "token": "xxxxxxxxxxxxxxxxxxxx"
+        },
+        "ntfy": {
+            "server_url": "https://example.com",
+            "token": "xxxxxxxxxxxxxxxxxxxx",
+            "priority": 4
+        },
+        "gotify": {
+            "server_url": "https://example.com",
+            "token": "xxxxxxxxxxxxxxxxxxxx",
+            "priority": 8
+        }
+    },
+    "onlyError": false
+}

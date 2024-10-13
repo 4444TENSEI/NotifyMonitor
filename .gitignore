@@ -1,0 +1,7 @@
+__pycache__/
+script/
+asset/
+
+notifywind.json
+
+*.zip
