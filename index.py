@@ -27,4 +27,5 @@ def handler(event, context):
     print("任务结束, 总用时: {:.2f}秒".format(total_end_time - total_start_time))
 
 
-handler(None, None)
+# 开发环境时保留这句, 但是请注意在部署时要注释或移除这行, 因为云函数会自动运行一次handler, 不注释掉会造成连续推送2次
+# handler(None, None)

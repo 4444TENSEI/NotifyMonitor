@@ -23,6 +23,7 @@
 1. 拉取项目源码或者是直接在[最新发行版版](https://github.com/4444TENSEI/NotifyMonitor/releases/latest)下载最新版源码的`ZIP压缩包`，用于上传到华为云函数
 2. 查看本项目作者所写的**部署教程**：[华为云函数部署Python定时任务](https://blog.yokaze.top/archives/930)，
 3. 需要在**环境变量**中配置`键`为`NOTIFYWIND`，`值`就是下方json配置文件中的内容，关键部位自行修改
+4. 为了避免运行提前终止，需要在**常规设置**中配置`执行超时时间（秒）`至少为`30`秒。
 
 ### **环境变量**内容示例，位于项目根目录下`example.notifywind.json`，内容如下：
 

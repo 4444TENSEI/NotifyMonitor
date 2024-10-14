@@ -26,5 +26,5 @@
             "priority": 8
         }
     },
-    "onlyError": false
+    "onlyError": true
 }
