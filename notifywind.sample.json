@@ -1,0 +1,16 @@
+{
+    "monitor": {
+        "ip": {
+            "要监控的服务器IP(不需要可以直接删除整组键值对)": "123.123.123.123"
+        },
+        "url": {
+            "要监控的域名地址(不需要可以直接删除整组键值对)": "http://meow.meow.meow"
+        }
+    },
+    "NotifyWind": {
+        "pushplus": {
+            "token": "xxxxxxxxxxxxxxxxxxxx"
+        }
+    },
+    "onlyError": true
+}

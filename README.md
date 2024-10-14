@@ -16,47 +16,35 @@
 
 > # 部署到`华为云函数`
 
-> 打个广告：**本项目**的**消息推送**功能依赖**NotifyWind**插件化实现，[点击前往项目仓库](https://github.com/4444TENSEI/NotifyWind)（一个就算集成到已有项目也非常便捷的消息推送SDK）
+> *本项目的**消息推送**实现基于**NotifyWind** SDK，[点击前往项目仓库](https://github.com/4444TENSEI/NotifyWind)（一个就算集成到已有项目也非常便捷的消息推送SDK）*
 
 ### 具体部署步骤：
 
 1. 拉取项目源码或者是直接在[最新发行版版](https://github.com/4444TENSEI/NotifyMonitor/releases/latest)下载最新版源码的`ZIP压缩包`，用于上传到华为云函数
 2. 查看本项目作者所写的**部署教程**：[华为云函数部署Python定时任务](https://blog.yokaze.top/archives/930)，
-3. 需要在**环境变量**中配置`键`为`NOTIFYWIND`，`值`就是下方json配置文件中的内容，关键部位自行修改
-4. 为了避免运行提前终止，需要在**常规设置**中配置`执行超时时间（秒）`至少为`30`秒。
+3. 需要在**设置**-**环境变量**中配置`键`为`NOTIFYWIND`，`值`就是下方json配置文件中的内容，关键部位自行修改
+4. 为了避免运行提前终止，需要在**设置**-**常规设置**中配置`执行超时时间（秒）`至少为`30`秒。
 
-### **环境变量**内容示例，位于项目根目录下`example.notifywind.json`，内容如下：
+### **环境变量**内容示例(简易版)
+
+这是一个简易版配置文件示例，也就是项目根目录下的`notifywind.sample.json`，更详细的配置请查看`notifywind.example.json`，（开发环境时请确保更改配置文件名称为`notifywind.json`）：
 
 ```json
 {
     "monitor": {
         "ip": {
-            "服务器IP": "123.123.123.123",
-            "键名可以自定义作为备注": "321.321.321.321",
-            "键值对可以是多个": "255.255.255.233"
+            "要监控的服务器IP(不需要可以直接删除整组键值对)": "123.123.123.123"
         },
         "url": {
-            "后端服务地址": "http://meow.meow.meow",
-            "键名可以自定义作为备注": "http://aaa.com",
-            "键值对可以是多个": "http://ddd.eee.com"
+            "要监控的域名(不需要可以直接删除整组键值对)": "http://meow.meow.meow"
         }
     },
     "NotifyWind": {
         "pushplus": {
             "token": "xxxxxxxxxxxxxxxxxxxx"
-        },
-        "ntfy": {
-            "server_url": "https://example.com",
-            "token": "xxxxxxxxxxxxxxxxxxxx",
-            "priority": 4
-        },
-        "gotify": {
-            "server_url": "https://example.com",
-            "token": "xxxxxxxxxxxxxxxxxxxx",
-            "priority": 8
         }
-    }
-    "onlyError": false
+    },
+    "onlyError": true
 }
 ```
 
