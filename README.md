@@ -1,7 +1,7 @@
 <p align="center"><img src="https://testingcf.jsdelivr.net/gh/4444TENSEI/CDN/img/avatar/AngelDog/AngelDog-rounded.png" alt="Logo"
     width="200" height="200"/></p>
 <h1 align="center">NotifyMonitor</h1>
-<h4 align="center">云函数配合Python实现HTTP定时监控同时进行消息推送。无需任何成本轻易部署。支持的推送服务: 微信推送(pushplus)、系统级推送(ntfy、gotify)</h4>
+<h4 align="center">无需个人服务器的服务运行监控+消息推送，基于云函数实现定时请求服务运行状态，并在完成过后自动将结果推送到移动设备上。推送服务支持微信(pushplus)+系统级通知(ntfy、gotify)。无需个人服务器、轻量、稳定、低依赖、无成本、易部署，简单配置即可部署到大厂云函数服务上，稳定守卫你的服务(器)运行状态。</h4>
 <p align="center">
 <img src="https://img.shields.io/badge/Python-276DC3?style=for-the-badge&logo=python&logoColor=white" />
 </p>    
